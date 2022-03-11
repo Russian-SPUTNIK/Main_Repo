@@ -1,12 +1,12 @@
 #include <DHT.h>
 #define Type DHT11
 
-int sensePin=7; //pin
+int sensePin = 7; //pin
 DHT HT(sensePin, Type); //object HT- Humanity sensor
 float humidity;
 float tempC;
 int set_time = 500;
-int dt=1000;
+int dt = 1000;
  
 void setup() {
   // put your setup code here, to run once:
