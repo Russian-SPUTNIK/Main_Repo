@@ -84,7 +84,7 @@ void gyro() {
     
       }
       
-   if (lightVal*10 < 15 )
+   if (lightVal*10 < 15)
       {
         digitalWrite(ledPin, HIGH);
       }
@@ -94,5 +94,6 @@ void gyro() {
       }
       
     Serial.println(lightVal);
-    delay(100);
+    delay(150);
  }
+
