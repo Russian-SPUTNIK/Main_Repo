@@ -7,7 +7,7 @@ from Data.get_data import get_data
 from Data.load import load
 
 
-client = commands.Bot(command_prefix="sc ", intents=discord.Intents.all())
+client = commands.Bot(command_prefix="ss.", intents=discord.Intents.all())
 client.remove_command('help')
 
 

@@ -13,7 +13,7 @@ class Help(commands.Cog):
             description="**```Hello, I am Spacy and I will provide you information about:```**",
             color=discord.Color.dark_blue()
         ).set_author(name=ctx.author, icon_url=ctx.author.avatar_url
-        ).add_field(name="Personal Data", value=":thermometer: Body temperature\n:anatomical_heart: BPM (Beats Per Minutes)", inline=True
+        ).add_field(name="Personal Data", value=":thermometer: Body temperature\n:anatomical_heart: BPM (Beats Per Minute)", inline=True
         ).add_field(name="Environment Data", value=":thermometer: Ambient temperature\n:dash: Atmospheric pressure\n:droplet: Humidity\n:sunny: Light", inline=True)
 
         return await ctx.send(embed=embed)
