@@ -13,8 +13,8 @@
 #include <ESP8266HTTPClient.h>
 #include <WiFiClient.h>
 
-const char* ssid = "VIVACOM_FiberNet_04C0";
-const char* password = "0363603633"; // парола на wifi мрежата
+const char* ssid = "xxxx";
+const char* password = "yyyy"; // парола на wifi мрежата
 
 //Your Domain name with URL path or IP address with path
 const char* serverName = "https://canary.discord.com/api/webhooks/951934216160026664/culLyaWqUtUH8RDm9TftCso6Zce306Dtv6-eKfpAlKm6VLmp9CsNfu9FfnSOkgkXedmJ";
