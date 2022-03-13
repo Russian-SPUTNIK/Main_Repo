@@ -88,6 +88,7 @@
 > | ``MAX30100_PulseOximeter.h`` | **-** |
 > | ``LiquidCrystal.h`` | **-** |
 > | ``RTClib.h`` | **-** |
+> | ``BMP280_DEV.h`` | **-** |
 > | ``ESP8266WiFi.h`` | **-** |
 > | ``ESP8266HTTPClient.h`` | **-** |
 > | ``WiFiClient.h`` | **-** |
