@@ -69,9 +69,9 @@
 > Основите на проекта са поставени именно благодарение на Arduino. Събирането на данните от сензорите, пращането на request-и към webhook-а и други функционалности са направени именно чрез **``.ino``** файлове.
 >
 >
->    <img src="DocsImages/bot_help_command.png"/>
+>    <img src="DocsImages/arduino_logo.png"/>
 
 > **``Python``** е езикът за програмиране, на който е написан нашият Discord бот. Използван е Discord API Wrapper-ът **``discord.py``** за тази цел.
 >
 >
->    <img src="DocsImages/bot_help_command.png" width="250" height="250" />
+>    <img src="DocsImages/python_icon.png" width="250" height="250" />
