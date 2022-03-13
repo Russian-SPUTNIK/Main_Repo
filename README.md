@@ -86,7 +86,7 @@
 > | ``DHT.h`` | **-** |
 > | ``Wire.h`` | **-** |
 > | ``MAX30100_PulseOximeter.h`` | **-** |
-> | ``LiquidCrystal.h`` | **-** |
+> | ``LiquidCrystal.h`` | **Стандартна библиотека** |
 > | ``RTClib.h`` | **-** |
 > | ``BMP280_DEV.h`` | **-** |
 > | ``ESP8266WiFi.h`` | **-** |
