@@ -57,7 +57,7 @@
     int httpResponseCode = http.POST("{\"embeds\":\[\{\"title\":\"Data\",\"description\":\":thermometer: **```Body temperature: 36°C```**:anatomical_heart: **```BPM (Beats Per Minute): 80```**:thermometer: **```Ambient temperature: 38°C```**:dash: **```Atmospheric pressure: 980.06```**\",\"color\":15258703,\"thumbnail\":\{\"url\":\"https://cdn.discordapp.com/avatars/951801611771080714/655f3fd85fc43481b9f332630b2032b6.webp?size=1024\"\},\"footer\":\{\"text\":\"By team SPUTNIK\"\}\}\]}");
 ```
 
-#### 3.2.4. Discord bot
+#### 3.2.4. Discord Bot
 > Нашият бот се казва **``Spacy``**. Тя представлява лицето на проекта в Discord. По план трябваше тя да бъде свързана с db(**``MongoDB``**), в което щеше да се пази статистика от данните, събрани от сензорите, но времето не достигна и този feature не е имплементиран. За момента Spacy разполага с една команда, която изпраща embed в чата **(c)** за функционалността на бота.
 
 **(c)**
