@@ -44,10 +44,18 @@
 > Освен това човекът бива известяван за обекти в радиус от около 75 cm, за да се предотврати удар.
 
 #### 3.2.3. Webhook
-> **``Webhook``** е технология, която ни позволява да свържем проекта и Discord, за да може събраната информация от сензорите да се вижда и онлайн. Това става чрез request **(a)**, който се праща от Ардуиното към webhook-а чрез request метода [**``POST``**](https://en.wikipedia.org/wiki/POST_(HTTP)).
->
+> **``Webhook``** е технология, която ни позволява да свържем проекта и Discord, за да може събраната информация от сензорите да се вижда и онлайн**(a)**. Това става чрез request **(b)**, който се праща от Ардуиното към webhook-а чрез request метода [**``POST``**](https://en.wikipedia.org/wiki/POST_(HTTP)).
 
 **(a)**
+>    <img src="DocsImages/info_format.png" width="400" height="250" />
+
+**(b)**
 ```ino
     int httpResponseCode = http.POST("{\"embeds\":\[\{\"title\":\"Data\",\"description\":\":thermometer: **```Body temperature: 36°C```**:anatomical_heart: **```BPM (Beats Per Minute): 80```**:thermometer: **```Ambient temperature: 38°C```**:dash: **```Atmospheric pressure: 980.06```**\",\"color\":15258703,\"thumbnail\":\{\"url\":\"https://cdn.discordapp.com/avatars/951801611771080714/655f3fd85fc43481b9f332630b2032b6.webp?size=1024\"\},\"footer\":\{\"text\":\"By team SPUTNIK\"\}\}\]}");
 ```
+
+#### 3.2.4. Discord bot
+> Нашият бот се казва **``Spacy``**. Тя представлява лицето на проекта в Discord. По план трябваше тя да бъде свързана с db(**``MongoDB``**), в което щеше да се пази статистика от данните, събрани от сензорите, но времето не достигна и този feature не е имплементиран. За момента Spacy разполага с една команда, която изпраща embed в чата **(c)** за функционалността на бота.
+
+**(c)**
+>    <img src="DocsImages/bot_help_command.png" width="400" height="250" />
