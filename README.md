@@ -112,4 +112,4 @@
 > * **Мартин Тарлев, 10Г** - *мрежар* - [turluchki](https://github.com/turluchki)
 > * **Виктор Димитров, 10Г** - *мрежар* - [UncUnc6](https://github.com/UncUnc6)
 > * **Пламена Георгиева, 10Г** - *мрежар, дизайнер* - [Plampie](https://github.com/Plampie)
-> * **Ивайло Каньов** - *програмист, дизайнер, създател на този .md файл* - [Archer743](https://github.com/Archer743)
+> * **Ивайло Каньов, 10Б** - *програмист, дизайнер, създател на този .md файл* - [Archer743](https://github.com/Archer743)
