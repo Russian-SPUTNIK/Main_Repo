@@ -104,3 +104,12 @@
 > | ``datetime`` | **Стандартен модул** |
 > | ``itertools`` | **Стандартен модул** |
 > | ``termcolor`` | 1.1.0 |
+
+
+## 6. Информация за авторите на проекта
+
+* **Емилия Чукалева, 10Г** - *мрежар, дизаинер* - [michislava](https://github.com/michislava)
+* **Мартин Тарлев, 10Г** - *мрежар* - [turluchki](https://github.com/turluchki)
+* **Виктор Димитров, 10Г** - *мрежар* - [UncUnc6](https://github.com/UncUnc6)
+* **Пламена Георгиева, 10Г** - *мрежар, дизаинер* - [Plampie](https://github.com/Plampie)
+* **Ивайло Каньов** - *програмист, дизаинер, github-er* - [Archer743](https://github.com/Archer743)
