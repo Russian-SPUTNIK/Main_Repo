@@ -20,10 +20,6 @@ class On_Ready(commands.Cog):
         await self.client.change_presence(status=discord.Status.online, activity=discord.Game(next(self.cur_status)))
 
     async def message(self):
-        print(colored("===================", "red") + "BOT" + colored("============================", "red"))
-        print(colored('Bot ', "magenta") + colored('{0.user}'.format(self.client), "red") + colored(' is ready!', "magenta"))
-        print(colored("==================================================", "red"))
-
         embed = discord.Embed(
             title=f"{self.client.user.name} is online!",
             description="**Date** :alarm_clock:```{}```".format(datetime.datetime.now().strftime("%a, %#d %B %Y, %I:%M:%S %p, UTC")),
