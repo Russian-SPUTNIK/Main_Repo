@@ -25,7 +25,8 @@ unsigned long lastTime = 0;
 // Timer set to 10 minutes (600000)
 //unsigned long timerDelay = 600000;
 // Set timer to 5 seconds (5000)
-unsigned long timerDelay = 5000;
+unsigned long timerDelay = 5000; // 3600000 = 1h
+
 
 void setup() {
   Serial.begin(115200);
@@ -37,8 +38,8 @@ void setup() {
     Serial.print(".");
   }
   Serial.println("");
-  Serial.print("Connected to WiFi network with IP Address: ");
-  Serial.println(WiFi.localIP());
+  // Serial.print("Connected to WiFi network with IP Address: ");
+  // Serial.println(WiFi.localIP());
  
   Serial.println("Timer set to 5 seconds (timerDelay variable), it will take 5 seconds before publishing the first reading.");
 }
@@ -64,7 +65,7 @@ void loop() {
       
       // If you need an HTTP request with a content type: application/json, use the following:
       http.addHeader("Content-Type", "application/json");
-      int httpResponseCode = http.POST("{\"embeds\":\[\{\"title\":\"Data\",\"description\":\"**```Pizza is good!```**\",\"color\":15258703,\"thumbnail\":\{\"url\":\"https://cdn.discordapp.com/avatars/951801611771080714/655f3fd85fc43481b9f332630b2032b6.webp?size=1024\"\},\"footer\":\{\"text\":\"So cool! :smirk:\"\}\}\]}");
+      int httpResponseCode = http.POST("{\"embeds\":\[\{\"title\":\"Data\",\"description\":\":thermometer: **```Body temperature: 36°C```**:anatomical_heart: **```BPM (Beats Per Minute): 80```**:thermometer: **```Ambient temperature: 38°C```**:dash: **```Atmospheric pressure: 980.06```**\",\"color\":15258703,\"thumbnail\":\{\"url\":\"https://cdn.discordapp.com/avatars/951801611771080714/655f3fd85fc43481b9f332630b2032b6.webp?size=1024\"\},\"footer\":\{\"text\":\"By team SPUTNIK\"\}\}\]}");
 
       // If you need an HTTP request with a content type: text/plain
       //http.addHeader("Content-Type", "text/plain");

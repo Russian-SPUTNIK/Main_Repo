@@ -1,12 +1,23 @@
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
 from termcolor import colored
+from itertools import cycle
 import datetime
 
 
 class On_Ready(commands.Cog):
     def __init__(self, client):
         self.client = client
+        self.cur_status = cycle([
+            "“If you wish to make an apple pie from scratch, you must first invent the universe.”",
+            "“We are like butterflies who flutter for a day and think it is forever.”",
+            "“We make our world significant by the courage of our questions and the depth of our answers.”",
+            "“Books break the shackles of time, proof that humans can work magic.”"
+        ])
+    
+    @tasks.loop(seconds=30)
+    async def change_status(self):
+        await self.client.change_presence(status=discord.Status.online, activity=discord.Game(next(self.cur_status)))
 
     async def message(self):
         print(colored("===================", "red") + "BOT" + colored("============================", "red"))
@@ -26,6 +37,7 @@ class On_Ready(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
+        self.change_status.start()
         await self.message()
 
 
